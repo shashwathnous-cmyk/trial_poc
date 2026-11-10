@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "runId": "20261110T052933Z",
+  "status": "completed",
+  "lastRunAt": "2026-11-10T05:30:22Z",
+  "workspaceMode": "single",
+  "packageManager": "npm",
+  "selectedAiTool": "cursor",
+  "only": "",
+  "dryRun": 0,
+  "force": 0,
+  "skipValidation": 0,
+  "detected": {
+    "ui": { "stack": "none", "score": 0, "status": "missing" },
+    "backend": { "stack": "none", "score": 0, "status": "missing" },
+    "database": { "stack": "none", "score": 0, "status": "missing" }
+  },
+  "selected": {
+    "ui": "react",
+    "backend": "node",
+    "database": "mysql",
+    "reactPostCreate": "install"
+  },
+  "targets": {
+    "ui": "client",
+    "backend": "server"
+  },
+  "toolVersions": {
+    "node": "missing",
+    "npm": "11.6.2",
+    "pnpm": "missing",
+    "yarn": "missing",
+    "python3": "Python 3.12.3",
+    "go": "missing",
+    "dotnet": "missing",
+    "php": "missing",
+    "composer": "missing",
+    "ruby": "missing",
+    "rails": "missing"
+  },
+  "markers": {
+    "nestedRepos": "",
+    "ci": "",
+    "environment": ""
+  },
+  "stepResults": " scaffold-ui:react=skipped_missing_tools scaffold-backend:node=skipped_missing_tools database:mysql=succeeded discovery=succeeded ai:cursor=succeeded",
+  "needsUserDecision": "",
+  "logFile": "/mnt/c/Users/saishashwathar/Desktop/poc/specs/.devx/logs/init-20261110T052933Z.log"
+}

@@ -1,25 +1,25 @@
 # Current State
 
-> Placeholder until workspace discovery runs in the target IDE workspace.
+> Auto-generated from the current IDE workspace.
+> Workspace root: `/mnt/c/Users/saishashwathar/Desktop/poc`
+> Generated: 2026-11-10T05:30:01Z
 
-## Discovery Status
+## Repositories And Modules (1)
 
-- Status: not-run
-- Architecture mode: monolith
-- Refresh command: `bash specs/.devx/discover-workspace.sh`
+## poc
 
-## Repositories And Modules
+- Path: `.`
+- Type: `unknown`
+- Bounded contexts: workspace-root
+- Frameworks: unknown
+- Package managers: unknown
+- Test tools: unknown
+- Key files: `specs/.devx/mcp/package.json`
+- Summary: Repository discovered in the workspace for workspace-root.
 
-| Repository / Module | Type | Stack | Key Files | Notes |
-| --- | --- | --- | --- | --- |
-| _Pending discovery_ | _TBD_ | _TBD_ | _TBD_ | _Run discovery before implementation_ |
 
-## Existing Routes, Screens, APIs, And Shared Modules
+## Existing Code Guidance
 
-- Pending discovery.
-
-## Implementation Constraints
-
-- Verify owner and impacted code areas before editing.
-- Prefer existing patterns over generic guidance.
-- Treat generated change maps as advisory until verified in code.
+- Use `specs/.devx/workspace-repos.json` for machine-readable repo inventory.
+- Use `specs/.devx/change-maps/<feature-slug>.md` for feature-specific candidate areas.
+- Use the Golden Repo Guidelines file listed in this feature's `prompt.md` (under `specs/.devx/guidance/versions/`) when present, but prefer verified local code patterns on conflict.
