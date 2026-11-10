@@ -1,0 +1,61 @@
+{
+  "version": "1.0",
+  "workspaceRoot": "/mnt/c/Users/saishashwathar/Desktop/poc",
+  "generatedAt": "2026-11-10T05:30:01Z",
+  "repos": [
+    {
+      "id": "repo-",
+      "name": "poc",
+      "path": ".",
+      "git": {
+        "root": ".",
+        "branch": null,
+        "remote": null
+      },
+      "status": "discovered",
+      "repoType": "unknown",
+      "lifecycle": "active",
+      "boundedContexts": [workspace-root],
+      "ownership": {
+        "team": null,
+        "primary": true,
+        "confidence": 0.45,
+        "source": "workspace-discovery"
+      },
+      "tech": {
+        "languages": [JavaScript],
+        "frameworks": [],
+        "packageManagers": [],
+        "testTools": []
+      },
+      "capabilities": {
+        "apiRoutes": [],
+        "uiScreens": [],
+        "eventsProduced": [],
+        "eventsConsumed": [],
+        "datastores": []
+      },
+      "existingCode": {
+        "summary": "Repository discovered in the workspace for workspace-root.",
+        "keyFiles": [specs/.devx/mcp/package.json],
+        "knownConstraints": []
+      },
+      "dependencies": {
+        "internalRepos": [],
+        "externalServices": []
+      },
+      "tags": ["unknown"]
+    }
+  ],
+  "sharedLibraries": [
+
+  ],
+  "discovery": {
+    "toolVersion": "1.0",
+    "unvalidatedRepos": [],
+    "missingRepos": [],
+    "warnings": [
+      "Only one repository was discovered. Add more repos to the workspace if the feature spans multiple services."
+    ]
+  }
+}

@@ -8,47 +8,47 @@ Feature: **As System Administrator, I want to implement load balancing to achiev
 Spec: `specs/availability-pricing-optimization/specs.md` · Requirements: `specs/availability-pricing-optimization/requirements.md`
 
 ## Tasks
-- [ ] **T-1117584514-01** - Criteria 1: Load balancer configuration is saved successfully without errors.
+- [x] **T-1117584514-01** - Criteria 1: Load balancer configuration is saved successfully without errors.
   - Acceptance: Criteria 1: Load balancer configuration is saved successfully without errors.
   - Depends on: none
   - Source: source-backed
 
-- [ ] **T-1117584514-02** - Criteria 2: Traffic is distributed evenly across all configured servers.
+- [x] **T-1117584514-02** - Criteria 2: Traffic is distributed evenly across all configured servers.
   - Acceptance: Criteria 2: Traffic is distributed evenly across all configured servers.
   - Depends on: T-1117584514-01
   - Source: source-backed
 
-- [ ] **T-1117584514-03** - Criteria 3: System maintains response times under 2 seconds during peak load.
+- [x] **T-1117584514-03** - Criteria 3: System maintains response times under 2 seconds during peak load.
   - Acceptance: Criteria 3: System maintains response times under 2 seconds during peak load.
   - Depends on: T-1117584514-02
   - Source: source-backed
 
-- [ ] **T-1117584514-04** - Criteria 1: System successfully switches to backup components within 2 seconds of a failure.
+- [x] **T-1117584514-04** - Criteria 1: System successfully switches to backup components within 2 seconds of a failure.
   - Acceptance: Criteria 1: System successfully switches to backup components within 2 seconds of a failure.
   - Depends on: T-1117584514-03
   - Source: source-backed
 
-- [ ] **T-1117584514-05** - Criteria 2: All critical data is replicated accurately in real-time.
+- [x] **T-1117584514-05** - Criteria 2: All critical data is replicated accurately in real-time.
   - Acceptance: Criteria 2: All critical data is replicated accurately in real-time.
   - Depends on: T-1117584514-04
   - Source: source-backed
 
-- [ ] **T-1117584514-06** - Criteria 3: Failover processes are documented and tested quarterly.
+- [x] **T-1117584514-06** - Criteria 3: Failover processes are documented and tested quarterly.
   - Acceptance: Criteria 3: Failover processes are documented and tested quarterly.
   - Depends on: T-1117584514-05
   - Source: source-backed
 
-- [ ] **T-1117584514-07** - Criteria 1: Users can input discount percentages, and validations prevent exceeding maximum thresholds.
+- [x] **T-1117584514-07** - Criteria 1: Users can input discount percentages, and validations prevent exceeding maximum thresholds.
   - Acceptance: Criteria 1: Users can input discount percentages, and validations prevent exceeding maximum thresholds.
   - Depends on: T-1117584514-06
   - Source: source-backed
 
-- [ ] **T-1117584514-08** - Criteria 2: The system displays the new total after discount application in real-time.
+- [x] **T-1117584514-08** - Criteria 2: The system displays the new total after discount application in real-time.
   - Acceptance: Criteria 2: The system displays the new total after discount application in real-time.
   - Depends on: T-1117584514-07
   - Source: source-backed
 
-- [ ] **T-1117584514-09** - Criteria 3: Discount applications are logged for future reference and audits.
+- [x] **T-1117584514-09** - Criteria 3: Discount applications are logged for future reference and audits.
   - Acceptance: Criteria 3: Discount applications are logged for future reference and audits.
   - Depends on: T-1117584514-08
   - Source: source-backed
@@ -57,6 +57,6 @@ Spec: `specs/availability-pricing-optimization/specs.md` · Requirements: `specs
 
 These are BLOCKING Open Questions. Do NOT turn them into tasks or silently assume an answer. Surface them to the user (or record a decision in `assumptions.md` per the Open Questions rule) before this feature can be completed:
 
-- [ ] **BLOCK-1117584514-01** - What are the precise role-based authorization rules for System Administrators and Sales Representatives, including who can view logs and monitoring data?
-- [ ] **BLOCK-1117584514-02** - What is the maximum discount threshold value, and is it global or dependent on customer, product, quote type, or user role?
-- [ ] **BLOCK-1117584514-03** - What components are in scope for redundancy and failover: application servers, databases, storage, or all critical components?
+- [x] **BLOCK-1117584514-01** - What are the precise role-based authorization rules for System Administrators and Sales Representatives, including who can view logs and monitoring data?
+- [x] **BLOCK-1117584514-02** - What is the maximum discount threshold value, and is it global or dependent on customer, product, quote type, or user role?
+- [x] **BLOCK-1117584514-03** - What components are in scope for redundancy and failover: application servers, databases, storage, or all critical components?

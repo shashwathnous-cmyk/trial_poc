@@ -1,0 +1,45 @@
+[2026-11-10T05:29:33Z] [INFO] Astra DevX Init Orchestrator
+[2026-11-10T05:29:33Z] [INFO] Run id: 20261110T052933Z
+[2026-11-10T05:29:33Z] [INFO] Log: /mnt/c/Users/saishashwathar/Desktop/poc/specs/.devx/logs/init-20261110T052933Z.log
+[2026-11-10T05:29:38Z] [SUCCESS] Selected AI tool: Cursor
+[2026-11-10T05:29:38Z] [DEBUG] Loaded Golden Repo stack options from /mnt/c/Users/saishashwathar/Desktop/poc/specs/.devx/guidance/versions/7f03f225b9f3/golden-stack-options.env
+[2026-11-10T05:29:39Z] [PHASE] [1/6] Detect workspace
+[2026-11-10T05:29:45Z] [DEBUG] ui scores: react:0 angular:0 vue:0 svelte:0 => none 0 conflict=0
+[2026-11-10T05:29:45Z] [DEBUG] backend scores: node:0 python:0 go:0 dotnet:0 php:0 rails:0 => none 0 conflict=0
+[2026-11-10T05:29:45Z] [DEBUG] database scores: mysql:0 sqlserver:0 postgres:0 mongodb:0 oracle:0 => none 0 conflict=0
+[2026-11-10T05:29:46Z] [INFO] Package manager: npm
+[2026-11-10T05:29:46Z] [INFO] UI: none (missing, score 0)
+[2026-11-10T05:29:46Z] [INFO] Backend: none (missing, score 0)
+[2026-11-10T05:29:46Z] [INFO] Database: none (missing, score 0)
+[2026-11-10T05:29:46Z] [INFO] Workspace mode: single
+[2026-11-10T05:29:46Z] [PHASE] [2/6] Decide setup strategy
+[2026-11-10T05:29:59Z] [PHASE] [3/6] Preview plan
+[2026-11-10T05:29:59Z] [INFO] Workspace: single
+[2026-11-10T05:29:59Z] [INFO] Package manager: npm
+[2026-11-10T05:29:59Z] [INFO] Detected UI: none (missing, score 0)
+[2026-11-10T05:29:59Z] [INFO] Detected backend: none (missing, score 0)
+[2026-11-10T05:29:59Z] [INFO] Detected database: none (missing, score 0)
+[2026-11-10T05:30:01Z] [PHASE] [4/6] Execute selected steps
+[2026-11-10T05:30:01Z] [PROGRESS] Step 1/5: scaffold-ui/react
+[2026-11-10T05:30:01Z] [WARN] Skipping scaffold-ui/react because required tools are missing: node
+[2026-11-10T05:30:01Z] [DEBUG] step scaffold-ui:react => skipped_missing_tools
+[2026-11-10T05:30:01Z] [PROGRESS] Step 2/5: scaffold-backend/node
+[2026-11-10T05:30:01Z] [WARN] Skipping scaffold-backend/node because required tools are missing: node
+[2026-11-10T05:30:01Z] [DEBUG] step scaffold-backend:node => skipped_missing_tools
+[2026-11-10T05:30:01Z] [PROGRESS] Step 3/5: configure-database/mysql
+[2026-11-10T05:30:01Z] [DEBUG] step database:mysql => succeeded
+[2026-11-10T05:30:01Z] [PROGRESS] Step 4/5: workspace-discovery/devx
+[2026-11-10T05:30:01Z] [PROGRESS] Running workspace discovery
+[2026-11-10T05:30:03Z] [SUCCESS] Workspace discovery completed
+[2026-11-10T05:30:03Z] [DEBUG] step discovery => succeeded
+[2026-11-10T05:30:03Z] [PROGRESS] Step 5/5: configure-ai/cursor
+[2026-11-10T05:30:03Z] [INFO] Updating workspace context
+[2026-11-10T05:30:03Z] [INFO] Updated .cursorrules
+[2026-11-10T05:30:03Z] [INFO] Setting up MCP server dependencies
+[2026-11-10T05:30:21Z] [INFO] MCP server dependencies installed
+[2026-11-10T05:30:21Z] [INFO] Created .cursor/mcp.json with MCP config
+[2026-11-10T05:30:21Z] [DEBUG] step ai:cursor => succeeded
+[2026-11-10T05:30:21Z] [PHASE] [5/6] Validate workspace
+[2026-11-10T05:30:21Z] [INFO] Updating workspace context
+[2026-11-10T05:30:26Z] [PHASE] [6/6] Summary
+[2026-11-10T05:30:26Z] [SUCCESS] Done. DevX init status is recorded in specs/.devx/config.json
