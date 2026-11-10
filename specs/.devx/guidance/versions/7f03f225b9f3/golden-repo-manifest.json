@@ -1,0 +1,108 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-11-02T11:13:59.410Z",
+  "repoId": "20368008-08f0-4a1a-bdf9-01f475a9bd6b",
+  "repoName": "Automotive Standard",
+  "provider": "ado",
+  "repoUrl": "https://dev.azure.com/GoldenRepo/f9fbe6db-7161-4725-a620-92defcb7ba57/_apis/git/repositories/20368008-08f0-4a1a-bdf9-01f475a9bd6b",
+  "defaultBranch": "main",
+  "allFilesMode": false,
+  "requestedFilePaths": [
+    "BRD-Business-Requirements-Document-Test-projec11-sdlc3-1.0.md",
+    "intern1-home.md",
+    "risk-assessment-report.md"
+  ],
+  "includedFilePaths": [
+    "BRD-Business-Requirements-Document-Test-projec11-sdlc3-1.0.md",
+    "intern1-home.md",
+    "risk-assessment-report.md"
+  ],
+  "missingFilePaths": [],
+  "sourceFiles": [
+    {
+      "path": "BRD-Business-Requirements-Document-Test-projec11-sdlc3-1.0.md",
+      "chunkIndex": 0,
+      "score": 1,
+      "size": 75
+    },
+    {
+      "path": "intern1-home.md",
+      "chunkIndex": 0,
+      "score": 1,
+      "size": 146
+    },
+    {
+      "path": "intern1-home.md",
+      "chunkIndex": 1,
+      "score": 1,
+      "size": 186
+    },
+    {
+      "path": "intern1-home.md",
+      "chunkIndex": 2,
+      "score": 1,
+      "size": 399
+    },
+    {
+      "path": "intern1-home.md",
+      "chunkIndex": 3,
+      "score": 1,
+      "size": 639
+    },
+    {
+      "path": "risk-assessment-report.md",
+      "chunkIndex": 0,
+      "score": 1,
+      "size": 854
+    },
+    {
+      "path": "risk-assessment-report.md",
+      "chunkIndex": 1,
+      "score": 1,
+      "size": 248
+    },
+    {
+      "path": "risk-assessment-report.md",
+      "chunkIndex": 2,
+      "score": 1,
+      "size": 90
+    },
+    {
+      "path": "risk-assessment-report.md",
+      "chunkIndex": 3,
+      "score": 1,
+      "size": 3997
+    },
+    {
+      "path": "risk-assessment-report.md",
+      "chunkIndex": 4,
+      "score": 1,
+      "size": 1458
+    },
+    {
+      "path": "risk-assessment-report.md",
+      "chunkIndex": 5,
+      "score": 1,
+      "size": 1105
+    },
+    {
+      "path": "risk-assessment-report.md",
+      "chunkIndex": 6,
+      "score": 1,
+      "size": 279
+    },
+    {
+      "path": "risk-assessment-report.md",
+      "chunkIndex": 7,
+      "score": 1,
+      "size": 1811
+    },
+    {
+      "path": "risk-assessment-report.md",
+      "chunkIndex": 8,
+      "score": 1,
+      "size": 407
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,1384 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-11-02T11:13:59.555Z",
+  "enableTdd": false,
+  "totalFeatures": 15,
+  "features": [
+    {
+      "id": 20722,
+      "taskId": "FEATURE-20722",
+      "title": "As Mobile User, I want to view the application in responsive layout to achieve optimal reading experience",
+      "slug": "mobile-responsive-reading-layout",
+      "state": "planned",
+      "status": "not-started",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "What specific screens, pages, or application areas must be validated as part of this responsive layout feature?",
+          "blocking": false
+        },
+        {
+          "id": "oq-2",
+          "text": "What does \"confirmation of functionality is displayed\" mean in product terms: a visual message, successful interaction outcome, or general user feedback?",
+          "blocking": false
+        },
+        {
+          "id": "oq-3",
+          "text": "Are there defined mobile breakpoints, supported device classes, or minimum viewport sizes?",
+          "blocking": false
+        },
+        {
+          "id": "oq-4",
+          "text": "Are there approved responsive design libraries already in use that must be followed?",
+          "blocking": false
+        }
+      ],
+      "storyCount": 0,
+      "totalStoryPoints": 0,
+      "files": {
+        "specs": "specs/mobile-responsive-reading-layout/specs.md",
+        "requirements": "specs/mobile-responsive-reading-layout/requirements.md",
+        "tasks": "specs/mobile-responsive-reading-layout/tasks.md",
+        "prompt": "specs/mobile-responsive-reading-layout/prompt.md"
+      },
+      "userStories": []
+    },
+    {
+      "id": 21245,
+      "taskId": "FEATURE-21245",
+      "title": "As Sales Representative, I want to apply discounts to quotes to achieve better pricing for customers",
+      "slug": "sales-quote-discounts",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "Is the quote generation page a web page only, or must this feature also be available in mobile or other clients?",
+          "blocking": false
+        },
+        {
+          "id": "oq-2",
+          "text": "What exact request and response schema is required for `POST /api/quotes/apply-discount`?",
+          "blocking": true
+        },
+        {
+          "id": "oq-3",
+          "text": "Does `POST /api/quotes/apply-discount` perform a preview calculation only, persist the discount on the quote, or both?",
+          "blocking": false
+        },
+        {
+          "id": "oq-4",
+          "text": "What authentication and authorization rules apply to `POST /api/quotes/apply-discount`?",
+          "blocking": true
+        },
+        {
+          "id": "oq-5",
+          "text": "What are the exact allowed discount thresholds, and are they global or dependent on quote, product, customer, or other attributes?",
+          "blocking": false
+        },
+        {
+          "id": "oq-6",
+          "text": "How are discount rules represented in the discount rules database, and what data is required to evaluate them?",
+          "blocking": false
+        },
+        {
+          "id": "oq-7",
+          "text": "Is discount applied at quote level, line-item level, subtotal level, or final total level?",
+          "blocking": false
+        },
+        {
+          "id": "oq-8",
+          "text": "Are taxes, fees, shipping, or other price components included in the discount calculation?",
+          "blocking": false
+        },
+        {
+          "id": "oq-9",
+          "text": "What rounding and decimal precision rules apply to discount percentage and discounted totals?",
+          "blocking": false
+        },
+        {
+          "id": "oq-10",
+          "text": "Can multiple discounts be applied to a single quote, or is only one discount percentage allowed?",
+          "blocking": false
+        },
+        {
+          "id": "oq-11",
+          "text": "Can a previously applied discount be edited or removed before quote submission?",
+          "blocking": true
+        },
+        {
+          "id": "oq-12",
+          "text": "What exact UI validation message text should be shown when a discount exceeds the threshold?",
+          "blocking": false
+        },
+        {
+          "id": "oq-13",
+          "text": "What data fields must be recorded in the audit log for a discount application?",
+          "blocking": false
+        },
+        {
+          "id": "oq-14",
+          "text": "How long must discount audit records be retained?",
+          "blocking": false
+        },
+        {
+          "id": "oq-15",
+          "text": "Who is allowed to access or review discount audit logs?",
+          "blocking": true
+        },
+        {
+          "id": "oq-16",
+          "text": "What measurable service-level expectation defines “real-time” for discount recalculation and display?",
+          "blocking": false
+        },
+        {
+          "id": "oq-17",
+          "text": "Are there any accessibility requirements for discount entry, validation errors, and quote review states?",
+          "blocking": false
+        },
+        {
+          "id": "oq-18",
+          "text": "Are there approval workflows for discounts near or at threshold levels?",
+          "blocking": false
+        },
+        {
+          "id": "oq-19",
+          "text": "Should the system capture the original total alongside the discounted total for audit/reference purposes?",
+          "blocking": false
+        },
+        {
+          "id": "oq-20",
+          "text": "Are negative discounts, zero discounts, or decimal percentage values allowed?",
+          "blocking": false
+        }
+      ],
+      "storyCount": 0,
+      "totalStoryPoints": 0,
+      "files": {
+        "specs": "specs/sales-quote-discounts/specs.md",
+        "requirements": "specs/sales-quote-discounts/requirements.md",
+        "tasks": "specs/sales-quote-discounts/tasks.md",
+        "prompt": "specs/sales-quote-discounts/prompt.md"
+      },
+      "userStories": []
+    },
+    {
+      "id": 20930,
+      "taskId": "FEATURE-20930",
+      "title": "As Security Officer, I want to implement multi-factor authentication to achieve enhanced security",
+      "slug": "implement-multi-factor-authentication",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "Which client platforms must support the MFA flow: web, mobile, desktop, or multiple?",
+          "blocking": false
+        },
+        {
+          "id": "oq-2",
+          "text": "Does `POST /api/authenticate` represent a single-step or multi-step API interaction for password and second-factor verification?",
+          "blocking": false
+        },
+        {
+          "id": "oq-3",
+          "text": "What are the exact request and response payloads for `POST /api/authenticate`?",
+          "blocking": false
+        },
+        {
+          "id": "oq-4",
+          "text": "What HTTP status codes and error bodies are required for authentication outcomes?",
+          "blocking": true
+        },
+        {
+          "id": "oq-5",
+          "text": "What second-factor methods are supported beyond the example of SMS?",
+          "blocking": false
+        },
+        {
+          "id": "oq-6",
+          "text": "How do users enroll, update, remove, or replace authentication methods?",
+          "blocking": true
+        },
+        {
+          "id": "oq-7",
+          "text": "What recovery options are supported for lost second-factor devices?",
+          "blocking": false
+        },
+        {
+          "id": "oq-8",
+          "text": "What qualifies a device as recognized or unrecognized?",
+          "blocking": false
+        },
+        {
+          "id": "oq-9",
+          "text": "Which notification channels are used for unrecognized-device alerts?",
+          "blocking": false
+        },
+        {
+          "id": "oq-10",
+          "text": "What information must be included in each authentication log record?",
+          "blocking": true
+        },
+        {
+          "id": "oq-11",
+          "text": "Are method-management and recovery capabilities part of the same API/service scope or separate interfaces?",
+          "blocking": true
+        },
+        {
+          "id": "oq-12",
+          "text": "Which roles can view authentication logs, configure MFA policy, or administer recovery?",
+          "blocking": true
+        },
+        {
+          "id": "oq-13",
+          "text": "Is MFA mandatory for all user accounts immediately, or is rollout phased despite the 100% adoption success metric?",
+          "blocking": false
+        },
+        {
+          "id": "oq-14",
+          "text": "What measurable performance target defines “efficient” authentication?",
+          "blocking": true
+        },
+        {
+          "id": "oq-15",
+          "text": "Are there retry limits, expiration rules, lockout rules, or resend rules for second-factor verification?",
+          "blocking": false
+        },
+        {
+          "id": "oq-16",
+          "text": "What retention and privacy rules apply to authentication logs, device-recognition data, and MFA method records?",
+          "blocking": true
+        },
+        {
+          "id": "oq-17",
+          "text": "Are HIPAA-specific constraints intended to apply directly to this feature’s user authentication data handling, or is the selected SRS only providing general cross-cutting governance context?",
+          "blocking": true
+        },
+        {
+          "id": "oq-18",
+          "text": "What user-facing messages, notification content, and failure states are required for MFA and recovery flows?",
+          "blocking": false
+        },
+        {
+          "id": "oq-19",
+          "text": "Are users allowed to manage only their own authentication methods, or can administrators act on behalf of users?",
+          "blocking": true
+        },
+        {
+          "id": "oq-20",
+          "text": "What secure session behavior is required after successful MFA, including timeout, renewal, and logout handling?",
+          "blocking": false
+        }
+      ],
+      "storyCount": 0,
+      "totalStoryPoints": 0,
+      "files": {
+        "specs": "specs/implement-multi-factor-authentication/specs.md",
+        "requirements": "specs/implement-multi-factor-authentication/requirements.md",
+        "tasks": "specs/implement-multi-factor-authentication/tasks.md",
+        "prompt": "specs/implement-multi-factor-authentication/prompt.md"
+      },
+      "userStories": []
+    },
+    {
+      "id": 20729,
+      "taskId": "FEATURE-20729",
+      "title": "As Mobile User, I want to view images responsively to achieve faster loading times",
+      "slug": "responsive-image-loading",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "What exact device classifications or breakpoints define “device type” for resolution selection?",
+          "blocking": false
+        },
+        {
+          "id": "oq-2",
+          "text": "Does this feature apply only to mobile web, only to native mobile, or to both?",
+          "blocking": false
+        },
+        {
+          "id": "oq-3",
+          "text": "Which image formats are considered “optimized for web” for this feature?",
+          "blocking": false
+        },
+        {
+          "id": "oq-4",
+          "text": "What specific image types are in scope, such as content images, thumbnails, banners, product images, or user-uploaded images?",
+          "blocking": true
+        },
+        {
+          "id": "oq-5",
+          "text": "What is the expected behavior if an image cannot be loaded from the CDN or source asset location?",
+          "blocking": false
+        },
+        {
+          "id": "oq-6",
+          "text": "Are placeholders, skeletons, or fallback visuals required while deferred or loading images are not yet displayed?",
+          "blocking": false
+        },
+        {
+          "id": "oq-7",
+          "text": "What measurement method and environment should be used to validate the “within 1 second on average” performance requirement?",
+          "blocking": false
+        },
+        {
+          "id": "oq-8",
+          "text": "What baseline should be used to calculate the stated 80% reduction in image loading times on mobile?",
+          "blocking": false
+        },
+        {
+          "id": "oq-9",
+          "text": "Are there any browser, OS, or device support constraints for lazy loading behavior?",
+          "blocking": false
+        },
+        {
+          "id": "oq-10",
+          "text": "Are there any explicit accessibility requirements for image rendering, alternative text behavior, or loading announcements?",
+          "blocking": false
+        },
+        {
+          "id": "oq-11",
+          "text": "What specific “best practices for image handling” are required by the product or engineering organization for this feature?",
+          "blocking": true
+        },
+        {
+          "id": "oq-12",
+          "text": "Are there any cache behavior requirements for CDN-delivered responsive images?",
+          "blocking": false
+        },
+        {
+          "id": "oq-13",
+          "text": "Does this feature require analytics or telemetry to verify success metrics in production?",
+          "blocking": false
+        }
+      ],
+      "storyCount": 0,
+      "totalStoryPoints": 0,
+      "files": {
+        "specs": "specs/responsive-image-loading/specs.md",
+        "requirements": "specs/responsive-image-loading/requirements.md",
+        "tasks": "specs/responsive-image-loading/tasks.md",
+        "prompt": "specs/responsive-image-loading/prompt.md"
+      },
+      "userStories": []
+    },
+    {
+      "id": 20921,
+      "taskId": "FEATURE-20921",
+      "title": "As Security Officer, I want to implement data encryption to achieve secure user information handling",
+      "slug": "implement-data-encryption",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "Which specific roles are authorized to decrypt and access encrypted user data?",
+          "blocking": true
+        },
+        {
+          "id": "oq-2",
+          "text": "Does the feature include any read/access API endpoints beyond `POST /api/data`?",
+          "blocking": false
+        },
+        {
+          "id": "oq-3",
+          "text": "What is the request and response schema for `POST /api/data`?",
+          "blocking": true
+        },
+        {
+          "id": "oq-4",
+          "text": "What error responses and status codes are required for authorization failure, encryption failure, and transport security failure?",
+          "blocking": true
+        },
+        {
+          "id": "oq-5",
+          "text": "Which specific user database tables and fields are in scope for encryption?",
+          "blocking": true
+        },
+        {
+          "id": "oq-6",
+          "text": "Does this feature require migration or back-encryption of existing unencrypted user data already stored in the system?",
+          "blocking": true
+        },
+        {
+          "id": "oq-7",
+          "text": "What key management approach is required, including key storage, rotation, and operational ownership?",
+          "blocking": true
+        },
+        {
+          "id": "oq-8",
+          "text": "What data elements must be included in access-attempt audit logs?",
+          "blocking": false
+        },
+        {
+          "id": "oq-9",
+          "text": "How long must access logs be retained?",
+          "blocking": false
+        },
+        {
+          "id": "oq-10",
+          "text": "What monitoring behavior is required for unauthorized access attempts, such as alerts, dashboards, or incident workflows?",
+          "blocking": false
+        },
+        {
+          "id": "oq-11",
+          "text": "What measurable performance threshold defines acceptable impact from encryption?",
+          "blocking": true
+        },
+        {
+          "id": "oq-12",
+          "text": "Are there any UI or administrative interfaces for authorized personnel or Security Officers related to data access or audit review?",
+          "blocking": true
+        },
+        {
+          "id": "oq-13",
+          "text": "Are there any additional compliance, audit, or reporting obligations beyond the general data protection rationale stated in the source?",
+          "blocking": true
+        },
+        {
+          "id": "oq-14",
+          "text": "Should TLS 1.2 be the minimum accepted version with optional support for higher versions, or is a stricter minimum required in some environments?",
+          "blocking": false
+        }
+      ],
+      "storyCount": 1,
+      "totalStoryPoints": 8,
+      "files": {
+        "specs": "specs/implement-data-encryption/specs.md",
+        "requirements": "specs/implement-data-encryption/requirements.md",
+        "tasks": "specs/implement-data-encryption/tasks.md",
+        "prompt": "specs/implement-data-encryption/prompt.md"
+      },
+      "userStories": [
+        {
+          "id": 20921,
+          "title": "As Security Officer, I want to implement data encryption to achieve secure user information handling",
+          "state": "New",
+          "storyPoints": 8
+        }
+      ]
+    },
+    {
+      "id": 20789,
+      "taskId": "FEATURE-20789",
+      "title": "As a user with mobility impairments, I want to navigate the system using only my keyboard to achieve an accessible experience.",
+      "slug": "keyboard-only-accessibility-navigation",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "Which exact application surfaces are in scope within the monolith application: web only, all browser-based experiences, or additional UI surfaces?",
+          "blocking": true
+        },
+        {
+          "id": "oq-2",
+          "text": "Which actions are considered \"major actions\" and therefore require keyboard shortcuts?",
+          "blocking": false
+        },
+        {
+          "id": "oq-3",
+          "text": "What exact shortcut keys should be assigned for each major action?",
+          "blocking": false
+        },
+        {
+          "id": "oq-4",
+          "text": "Where should keyboard shortcut documentation be presented so that it is considered \"easily accessible\"?",
+          "blocking": false
+        },
+        {
+          "id": "oq-5",
+          "text": "Does \"all elements\" mean all interactive elements only, or literally every focusable/system-presented element?",
+          "blocking": false
+        },
+        {
+          "id": "oq-6",
+          "text": "Should Shift+Tab reverse navigation be explicitly required and tested?",
+          "blocking": false
+        },
+        {
+          "id": "oq-7",
+          "text": "Are additional keyboard interactions beyond Tab and Enter required for specific controls, such as menus, dialogs, tables, dropdowns, or other custom widgets?",
+          "blocking": false
+        },
+        {
+          "id": "oq-8",
+          "text": "Are there existing product or design-system standards for focus indicator appearance that this feature must follow?",
+          "blocking": false
+        },
+        {
+          "id": "oq-9",
+          "text": "Does the feature apply to unauthenticated pages as well as authenticated pages?",
+          "blocking": false
+        },
+        {
+          "id": "oq-10",
+          "text": "How should disabled, hidden, or dynamically revealed interactive elements behave in keyboard order and reachability validation?",
+          "blocking": true
+        },
+        {
+          "id": "oq-11",
+          "text": "Is there a formal accessibility standard or compliance target that defines pass/fail beyond the user story language?",
+          "blocking": true
+        },
+        {
+          "id": "oq-12",
+          "text": "How should \"responsive with no delays\" be measured for acceptance?",
+          "blocking": false
+        },
+        {
+          "id": "oq-13",
+          "text": "Is any user training or support content beyond shortcut documentation required, given the Golden Repo note that user training is assumed in the broader project context?",
+          "blocking": false
+        },
+        {
+          "id": "oq-14",
+          "text": "Are there observability, audit, or regression-monitoring expectations for accessibility behavior in production?",
+          "blocking": false
+        }
+      ],
+      "storyCount": 1,
+      "totalStoryPoints": 5,
+      "files": {
+        "specs": "specs/keyboard-only-accessibility-navigation/specs.md",
+        "requirements": "specs/keyboard-only-accessibility-navigation/requirements.md",
+        "tasks": "specs/keyboard-only-accessibility-navigation/tasks.md",
+        "prompt": "specs/keyboard-only-accessibility-navigation/prompt.md"
+      },
+      "userStories": [
+        {
+          "id": 20789,
+          "title": "As a user with mobility impairments, I want to navigate the system using only my keyboard to achieve an accessible experience.",
+          "state": "New",
+          "storyPoints": 5
+        }
+      ]
+    },
+    {
+      "id": 1117584514,
+      "taskId": "FEATURE-1117584514",
+      "title": "As System Administrator, I want to implement load balancing to achieve optimal resource utilization; As System Administrator, I want to implement redundancy and failover mechanisms to achieve continuous system availability; As Sales Representative, I want to apply discounts to quotes to achieve better pricing for customers",
+      "slug": "availability-pricing-optimization",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "What exact UI surfaces exist for:",
+          "blocking": false
+        },
+        {
+          "id": "oq-2",
+          "text": "load balancer configuration,",
+          "blocking": false
+        },
+        {
+          "id": "oq-3",
+          "text": "redundancy/failover configuration,",
+          "blocking": false
+        },
+        {
+          "id": "oq-4",
+          "text": "monitoring views,",
+          "blocking": false
+        },
+        {
+          "id": "oq-5",
+          "text": "failover documentation access?",
+          "blocking": false
+        },
+        {
+          "id": "oq-6",
+          "text": "What are the precise role-based authorization rules for System Administrators and Sales Representatives, including who can view logs and monitoring data?",
+          "blocking": true
+        },
+        {
+          "id": "oq-7",
+          "text": "What HTTP methods, request schemas, response schemas, and error contracts apply to `/api/loadbalancer/config` and `/api/redundancy/config`?",
+          "blocking": false
+        },
+        {
+          "id": "oq-8",
+          "text": "For `POST /api/quotes/apply-discount`, what are the exact request and response fields?",
+          "blocking": false
+        },
+        {
+          "id": "oq-9",
+          "text": "What is the maximum discount threshold value, and is it global or dependent on customer, product, quote type, or user role?",
+          "blocking": true
+        },
+        {
+          "id": "oq-10",
+          "text": "What discount rounding rules and currency calculation rules apply when computing the new total?",
+          "blocking": false
+        },
+        {
+          "id": "oq-11",
+          "text": "Does discount application create a preview only, or does it immediately persist to the quote before submission?",
+          "blocking": false
+        },
+        {
+          "id": "oq-12",
+          "text": "What exact audit fields are required for discount logging?",
+          "blocking": false
+        },
+        {
+          "id": "oq-13",
+          "text": "How is “evenly” distributed traffic measured or tolerated for validation purposes?",
+          "blocking": false
+        },
+        {
+          "id": "oq-14",
+          "text": "Which load balancing algorithms beyond round robin and least connections must be supported?",
+          "blocking": false
+        },
+        {
+          "id": "oq-15",
+          "text": "What exact session persistence techniques are required?",
+          "blocking": false
+        },
+        {
+          "id": "oq-16",
+          "text": "What exact performance metrics must be displayed to administrators?",
+          "blocking": false
+        },
+        {
+          "id": "oq-17",
+          "text": "What exact events constitute a failure that should trigger automatic failover?",
+          "blocking": false
+        },
+        {
+          "id": "oq-18",
+          "text": "What components are in scope for redundancy and failover: application servers, databases, storage, or all critical components?",
+          "blocking": true
+        },
+        {
+          "id": "oq-19",
+          "text": "What data is classified as “critical data” for real-time replication?",
+          "blocking": false
+        },
+        {
+          "id": "oq-20",
+          "text": "What evidence format satisfies the requirement that failover processes are documented and tested quarterly?",
+          "blocking": false
+        },
+        {
+          "id": "oq-21",
+          "text": "Is failover documentation expected to be maintained inside the application or in external operational documentation?",
+          "blocking": false
+        },
+        {
+          "id": "oq-22",
+          "text": "Are there any explicit accessibility requirements for the UI pages involved?",
+          "blocking": false
+        },
+        {
+          "id": "oq-23",
+          "text": "Are there any retention requirements for traffic logs, performance metrics, failover test records, or discount audit logs?",
+          "blocking": false
+        },
+        {
+          "id": "oq-24",
+          "text": "Are there any additional platform constraints implied by the selected monolith architecture that should govern implementation boundaries?",
+          "blocking": false
+        }
+      ],
+      "storyCount": 0,
+      "totalStoryPoints": 0,
+      "files": {
+        "specs": "specs/availability-pricing-optimization/specs.md",
+        "requirements": "specs/availability-pricing-optimization/requirements.md",
+        "tasks": "specs/availability-pricing-optimization/tasks.md",
+        "prompt": "specs/availability-pricing-optimization/prompt.md"
+      },
+      "userStories": []
+    },
+    {
+      "id": 56695,
+      "taskId": "FEATURE-56695",
+      "title": "Procurement Portal Lifecycle Foundation",
+      "slug": "procurement-lifecycle-portal",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "What are the exact baseline procurement request fields required for creation and draft save?",
+          "blocking": false
+        },
+        {
+          "id": "oq-2",
+          "text": "What is the exact initial lifecycle status value for a newly created request, and is draft a lifecycle status, a persistence state, or both?",
+          "blocking": false
+        },
+        {
+          "id": "oq-3",
+          "text": "What are the approved lifecycle state values, display labels, and transition definitions for initial implementation?",
+          "blocking": false
+        },
+        {
+          "id": "oq-4",
+          "text": "Which specific actor types are authorized to perform status changes on procurement requests?",
+          "blocking": true
+        },
+        {
+          "id": "oq-5",
+          "text": "Which specific roles are authorized reviewers for audit retrieval and export?",
+          "blocking": true
+        },
+        {
+          "id": "oq-6",
+          "text": "Which exact roles are authorized to manage workflow state and transition configuration?",
+          "blocking": true
+        },
+        {
+          "id": "oq-7",
+          "text": "What procurement portal landing-page sections are required in the initial release?",
+          "blocking": false
+        },
+        {
+          "id": "oq-8",
+          "text": "Is there a request list page in scope for this feature, or only direct-link and detail-page retrieval behavior?",
+          "blocking": true
+        },
+        {
+          "id": "oq-9",
+          "text": "Should access to procurement request detail pages themselves be audited, and if so under what conditions? Source says this “may” be required.",
+          "blocking": false
+        },
+        {
+          "id": "oq-10",
+          "text": "What reviewable export format is required for audit exports?",
+          "blocking": false
+        },
+        {
+          "id": "oq-11",
+          "text": "What exact error message copy should be used for invalid credentials, expired session, unauthorized access, and invalid lifecycle transitions?",
+          "blocking": true
+        },
+        {
+          "id": "oq-12",
+          "text": "What response semantics should be used for unauthorized or restricted request identifiers to avoid enumeration while still supporting user feedback?",
+          "blocking": false
+        },
+        {
+          "id": "oq-13",
+          "text": "How should draft ownership and edit permissions behave when more than one authorized user may access the same procurement request?",
+          "blocking": true
+        },
+        {
+          "id": "oq-14",
+          "text": "Are concurrent sessions for the same user fully allowed, and are there any limits or session revocation rules?",
+          "blocking": false
+        },
+        {
+          "id": "oq-15",
+          "text": "What is the retention duration, archival policy, and purge policy for audit records, status history, drafts, and sessions?",
+          "blocking": true
+        },
+        {
+          "id": "oq-16",
+          "text": "Are configuration changes managed through UI, API only, or operational configuration tooling?",
+          "blocking": false
+        },
+        {
+          "id": "oq-17",
+          "text": "Should workflow configuration changes support versioning/rollback, or only current active configuration?",
+          "blocking": false
+        },
+        {
+          "id": "oq-18",
+          "text": "For large status histories and audit result sets, what are the approved pagination defaults, limits, and export size limits?",
+          "blocking": false
+        },
+        {
+          "id": "oq-19",
+          "text": "What specific recoverable error states must be handled in navigation, request detail, and history views?",
+          "blocking": false
+        },
+        {
+          "id": "oq-20",
+          "text": "Golden Repo guidance references quality gates such as >90% automated test coverage and 10× load handling; confirm whether both are mandatory release gates for this feature.",
+          "blocking": false
+        }
+      ],
+      "storyCount": 0,
+      "totalStoryPoints": 0,
+      "files": {
+        "specs": "specs/procurement-lifecycle-portal/specs.md",
+        "requirements": "specs/procurement-lifecycle-portal/requirements.md",
+        "tasks": "specs/procurement-lifecycle-portal/tasks.md",
+        "prompt": "specs/procurement-lifecycle-portal/prompt.md"
+      },
+      "userStories": []
+    },
+    {
+      "id": 21236,
+      "taskId": "FEATURE-21236",
+      "title": "As Sales Representative, I want to view quote summary to achieve confirmation before submission",
+      "slug": "view-quote-summary-confirmation",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "What identifies the quote to `GET /api/quotes/summary`—session, quote ID, user context, or another identifier?",
+          "blocking": false
+        },
+        {
+          "id": "oq-2",
+          "text": "What is the exact response contract for `GET /api/quotes/summary`?",
+          "blocking": false
+        },
+        {
+          "id": "oq-3",
+          "text": "Are there separate API operations for editing quantities, removing items, confirming products, proceeding to submit, and canceling, or are these handled by existing endpoints not included in the source?",
+          "blocking": false
+        },
+        {
+          "id": "oq-4",
+          "text": "What specifically constitutes “product confirmation” for the rule that all products must be confirmed before finalizing?",
+          "blocking": false
+        },
+        {
+          "id": "oq-5",
+          "text": "What user-facing behavior should occur when the user attempts to finalize with unconfirmed products?",
+          "blocking": false
+        },
+        {
+          "id": "oq-6",
+          "text": "What should happen after cancel—discard temporary quote details, return to the quote generation page, or another behavior?",
+          "blocking": false
+        },
+        {
+          "id": "oq-7",
+          "text": "What should happen after editing quantities—stay on the summary, navigate back to quote generation, or another behavior?",
+          "blocking": false
+        },
+        {
+          "id": "oq-8",
+          "text": "Should total amount update immediately after edit/remove actions, and if so, by what interaction pattern?",
+          "blocking": true
+        },
+        {
+          "id": "oq-9",
+          "text": "What error handling is required if temporary quote details are missing, unavailable, stale, or inconsistent?",
+          "blocking": false
+        },
+        {
+          "id": "oq-10",
+          "text": "What authentication and authorization rules apply to access the quote summary API and UI?",
+          "blocking": true
+        },
+        {
+          "id": "oq-11",
+          "text": "Can a Sales Representative access only their own in-progress quote summary, or can they access summaries created by others?",
+          "blocking": true
+        },
+        {
+          "id": "oq-12",
+          "text": "What fields must be shown for each product besides product and quantity, if any?",
+          "blocking": false
+        },
+        {
+          "id": "oq-13",
+          "text": "What pricing and currency rules are used to calculate the total amount?",
+          "blocking": false
+        },
+        {
+          "id": "oq-14",
+          "text": "Are there any required loading, empty, or error states for the summary page?",
+          "blocking": false
+        },
+        {
+          "id": "oq-15",
+          "text": "Are there explicit accessibility requirements for the summary view?",
+          "blocking": false
+        },
+        {
+          "id": "oq-16",
+          "text": "Does the 2-second requirement apply to API response time, end-to-end page render time, or both?",
+          "blocking": false
+        }
+      ],
+      "storyCount": 1,
+      "totalStoryPoints": 5,
+      "files": {
+        "specs": "specs/view-quote-summary-confirmation/specs.md",
+        "requirements": "specs/view-quote-summary-confirmation/requirements.md",
+        "tasks": "specs/view-quote-summary-confirmation/tasks.md",
+        "prompt": "specs/view-quote-summary-confirmation/prompt.md"
+      },
+      "userStories": [
+        {
+          "id": 21236,
+          "title": "As Sales Representative, I want to view quote summary to achieve confirmation before submission",
+          "state": "New",
+          "storyPoints": 5
+        }
+      ]
+    },
+    {
+      "id": 21041,
+      "taskId": "FEATURE-21041",
+      "title": "As Shopper, I want to remove items from my shopping cart to achieve better selection of products",
+      "slug": "remove-items-shopping-cart",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "What request shape is required for `DELETE /api/cart/remove` to identify the cart item to remove?",
+          "blocking": true
+        },
+        {
+          "id": "oq-2",
+          "text": "What response payload should `DELETE /api/cart/remove` return on success: confirmation only, updated cart, updated total, or both?",
+          "blocking": true
+        },
+        {
+          "id": "oq-3",
+          "text": "What HTTP status codes and error payloads are required for unauthenticated requests, item-not-found-in-cart requests, and other failures?",
+          "blocking": false
+        },
+        {
+          "id": "oq-4",
+          "text": "What is the expected behavior if the user selects an item for removal and then cancels at the confirmation prompt?",
+          "blocking": false
+        },
+        {
+          "id": "oq-5",
+          "text": "What user-facing error message should be shown when the selected item does not exist in the cart?",
+          "blocking": false
+        },
+        {
+          "id": "oq-6",
+          "text": "What user-facing success indication, if any, should be shown after item removal?",
+          "blocking": false
+        },
+        {
+          "id": "oq-7",
+          "text": "What is the expected UI behavior when the last remaining item is removed and the cart becomes empty?",
+          "blocking": true
+        },
+        {
+          "id": "oq-8",
+          "text": "Is the 2-second performance requirement measured at the API response level, end-to-end client update level, or both?",
+          "blocking": false
+        },
+        {
+          "id": "oq-9",
+          "text": "How is cart total calculated after removal, including treatment of taxes, shipping, discounts, and promotions?",
+          "blocking": false
+        },
+        {
+          "id": "oq-10",
+          "text": "Does the endpoint operate only on the authenticated user's active cart, or can multiple cart contexts exist?",
+          "blocking": false
+        },
+        {
+          "id": "oq-11",
+          "text": "Are guest carts supported, and if so, how does the authentication requirement apply?",
+          "blocking": true
+        },
+        {
+          "id": "oq-12",
+          "text": "What accessibility requirements apply to the confirmation prompt and cart update flow?",
+          "blocking": false
+        },
+        {
+          "id": "oq-13",
+          "text": "Is repeated deletion of the same item expected to be idempotent, and if so, what should the second response be?",
+          "blocking": false
+        }
+      ],
+      "storyCount": 1,
+      "totalStoryPoints": 5,
+      "files": {
+        "specs": "specs/remove-items-shopping-cart/specs.md",
+        "requirements": "specs/remove-items-shopping-cart/requirements.md",
+        "tasks": "specs/remove-items-shopping-cart/tasks.md",
+        "prompt": "specs/remove-items-shopping-cart/prompt.md"
+      },
+      "userStories": [
+        {
+          "id": 21041,
+          "title": "As Shopper, I want to remove items from my shopping cart to achieve better selection of products",
+          "state": "New",
+          "storyPoints": 5
+        }
+      ]
+    },
+    {
+      "id": 20736,
+      "taskId": "FEATURE-20736",
+      "title": "As System Administrator, I want to ensure pricing data is synchronized to achieve accurate sales information",
+      "slug": "sync-pricing-sales-data",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "What authorization rules, beyond authentication, apply to pricing updates?",
+          "blocking": true
+        },
+        {
+          "id": "oq-2",
+          "text": "Which users are permitted to receive discrepancy alerts?",
+          "blocking": true
+        },
+        {
+          "id": "oq-3",
+          "text": "Are non-admin users allowed read-only access to pricing history logs, or are logs restricted to administrators?",
+          "blocking": false
+        }
+      ],
+      "storyCount": 1,
+      "totalStoryPoints": 8,
+      "files": {
+        "specs": "specs/sync-pricing-sales-data/specs.md",
+        "requirements": "specs/sync-pricing-sales-data/requirements.md",
+        "tasks": "specs/sync-pricing-sales-data/tasks.md",
+        "prompt": "specs/sync-pricing-sales-data/prompt.md"
+      },
+      "userStories": [
+        {
+          "id": 20736,
+          "title": "As System Administrator, I want to ensure pricing data is synchronized to achieve accurate sales information",
+          "state": "New",
+          "storyPoints": 8
+        }
+      ]
+    },
+    {
+      "id": 20765,
+      "taskId": "FEATURE-20765",
+      "title": "As Content Manager, I want to create and edit website content to achieve timely updates",
+      "slug": "content-manager-website-updates",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "Are there additional roles besides Content Manager that may create, edit, review, or publish content?",
+          "blocking": true
+        },
+        {
+          "id": "oq-2",
+          "text": "Are create, edit, save draft, and publish permissions always bundled for the Content Manager role, or can they be assigned separately?",
+          "blocking": true
+        },
+        {
+          "id": "oq-3",
+          "text": "What authentication mechanism is used for login?",
+          "blocking": true
+        }
+      ],
+      "storyCount": 1,
+      "totalStoryPoints": 8,
+      "files": {
+        "specs": "specs/content-manager-website-updates/specs.md",
+        "requirements": "specs/content-manager-website-updates/requirements.md",
+        "tasks": "specs/content-manager-website-updates/tasks.md",
+        "prompt": "specs/content-manager-website-updates/prompt.md"
+      },
+      "userStories": [
+        {
+          "id": 20765,
+          "title": "As Content Manager, I want to create and edit website content to achieve timely updates",
+          "state": "New",
+          "storyPoints": 8
+        }
+      ]
+    },
+    {
+      "id": 20750,
+      "taskId": "FEATURE-20750",
+      "title": "As System Administrator, I want to handle synchronization errors to achieve reliable operations",
+      "slug": "handle-synchronization-errors",
+      "state": "planned",
+      "status": "not-started",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "(none)",
+          "blocking": false
+        }
+      ],
+      "storyCount": 1,
+      "totalStoryPoints": 8,
+      "files": {
+        "specs": "specs/handle-synchronization-errors/specs.md",
+        "requirements": "specs/handle-synchronization-errors/requirements.md",
+        "tasks": "specs/handle-synchronization-errors/tasks.md",
+        "prompt": "specs/handle-synchronization-errors/prompt.md"
+      },
+      "userStories": [
+        {
+          "id": 20750,
+          "title": "As System Administrator, I want to handle synchronization errors to achieve reliable operations",
+          "state": "New",
+          "storyPoints": 8
+        }
+      ]
+    },
+    {
+      "id": 20698,
+      "taskId": "FEATURE-20698",
+      "title": "As Business Owner, I want to provide my business information to register for an account so that I can manage my business activities online.",
+      "slug": "business-owner-account-registration",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "What are the exact fields required under **address**?",
+          "blocking": false
+        },
+        {
+          "id": "oq-2",
+          "text": "What are the exact fields required under **contact information**?",
+          "blocking": false
+        },
+        {
+          "id": "oq-3",
+          "text": "Which of the displayed business information fields are mandatory versus optional?",
+          "blocking": false
+        },
+        {
+          "id": "oq-4",
+          "text": "What exact business name length limits apply?",
+          "blocking": false
+        },
+        {
+          "id": "oq-5",
+          "text": "What exact character restrictions apply to business name?",
+          "blocking": false
+        },
+        {
+          "id": "oq-6",
+          "text": "What exact format validations apply to each address and contact information field?",
+          "blocking": false
+        },
+        {
+          "id": "oq-7",
+          "text": "Is real-time validation required on each keystroke, on blur, or by another trigger?",
+          "blocking": false
+        },
+        {
+          "id": "oq-8",
+          "text": "What exact copy should be used for validation errors and the successful submission confirmation message?",
+          "blocking": false
+        },
+        {
+          "id": "oq-9",
+          "text": "Is save-progress behavior manual, automatic, or both?",
+          "blocking": false
+        },
+        {
+          "id": "oq-10",
+          "text": "How does a user resume saved registration progress?",
+          "blocking": false
+        },
+        {
+          "id": "oq-11",
+          "text": "Is saved progress tied to a session, email, tokenized link, or authenticated user identity?",
+          "blocking": false
+        },
+        {
+          "id": "oq-12",
+          "text": "What retention period applies to saved but unsubmitted registration data?",
+          "blocking": false
+        },
+        {
+          "id": "oq-13",
+          "text": "What is the exact API request schema for `POST /api/register`?",
+          "blocking": true
+        },
+        {
+          "id": "oq-14",
+          "text": "What are the success and error response codes and bodies for `POST /api/register`?",
+          "blocking": false
+        },
+        {
+          "id": "oq-15",
+          "text": "Does `POST /api/register` create the account immediately or only submit business information for later processing?",
+          "blocking": false
+        },
+        {
+          "id": "oq-16",
+          "text": "Is the endpoint idempotent for repeated submissions?",
+          "blocking": false
+        },
+        {
+          "id": "oq-17",
+          "text": "What authorization or anti-abuse controls apply to the registration endpoint?",
+          "blocking": true
+        },
+        {
+          "id": "oq-18",
+          "text": "What database persistence behavior is required for partial saves versus final submission?",
+          "blocking": false
+        },
+        {
+          "id": "oq-19",
+          "text": "Are audit logs required for registration creation, save-progress actions, validation failures, and submission events?",
+          "blocking": false
+        },
+        {
+          "id": "oq-20",
+          "text": "Are there accessibility requirements or standards for the registration page?",
+          "blocking": false
+        },
+        {
+          "id": "oq-21",
+          "text": "What are the exact measurement points for the under-2-second performance requirement: page load, validation response, API response, or all of these?",
+          "blocking": false
+        },
+        {
+          "id": "oq-22",
+          "text": "Are there specific integration constraints with the business database under the selected monolith architecture?",
+          "blocking": false
+        }
+      ],
+      "storyCount": 1,
+      "totalStoryPoints": 5,
+      "files": {
+        "specs": "specs/business-owner-account-registration/specs.md",
+        "requirements": "specs/business-owner-account-registration/requirements.md",
+        "tasks": "specs/business-owner-account-registration/tasks.md",
+        "prompt": "specs/business-owner-account-registration/prompt.md"
+      },
+      "userStories": [
+        {
+          "id": 20698,
+          "title": "As Business Owner, I want to provide my business information to register for an account so that I can manage my business activities online.",
+          "state": "New",
+          "storyPoints": 5
+        }
+      ]
+    },
+    {
+      "id": 21068,
+      "taskId": "FEATURE-21068",
+      "title": "As User, I want to perform a basic search to achieve relevant results quickly",
+      "slug": "basic-search-relevant-results",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "What exact query parameter name(s) must `GET /api/search` accept for the keyword input?",
+          "blocking": false
+        },
+        {
+          "id": "oq-2",
+          "text": "What is the exact response schema for `GET /api/search`?",
+          "blocking": true
+        },
+        {
+          "id": "oq-3",
+          "text": "What fields in each result item are required for display in the list view?",
+          "blocking": false
+        },
+        {
+          "id": "oq-4",
+          "text": "What rules define “relevant” results for ranking and ordering?",
+          "blocking": false
+        },
+        {
+          "id": "oq-5",
+          "text": "What sort order should be applied to returned results?",
+          "blocking": false
+        },
+        {
+          "id": "oq-6",
+          "text": "What pagination model is required, including page size, page number format, and whether total result count must be shown?",
+          "blocking": false
+        },
+        {
+          "id": "oq-7",
+          "text": "What should the system display when no results are found?",
+          "blocking": false
+        },
+        {
+          "id": "oq-8",
+          "text": "What exact validation message should be shown when the search input is empty?",
+          "blocking": false
+        },
+        {
+          "id": "oq-9",
+          "text": "Should whitespace-only input be treated as empty input?",
+          "blocking": false
+        },
+        {
+          "id": "oq-10",
+          "text": "Are there any minimum or maximum lengths for search keywords?",
+          "blocking": false
+        },
+        {
+          "id": "oq-11",
+          "text": "Are there restrictions on allowed characters or input sanitization requirements beyond non-empty validation?",
+          "blocking": false
+        },
+        {
+          "id": "oq-12",
+          "text": "What exact behavior constitutes “option to initiate a new search” in the UI?",
+          "blocking": false
+        },
+        {
+          "id": "oq-13",
+          "text": "What should occur after a user selects an item from the results list?",
+          "blocking": false
+        },
+        {
+          "id": "oq-14",
+          "text": "Are all authenticated users allowed to search all indexed content, or is result visibility filtered by user permissions?",
+          "blocking": true
+        },
+        {
+          "id": "oq-15",
+          "text": "What are the expected authentication failure behaviors for the UI and API?",
+          "blocking": true
+        },
+        {
+          "id": "oq-16",
+          "text": "Does the 2-second requirement apply to end-to-end UI rendering time, backend response time, or both?",
+          "blocking": false
+        },
+        {
+          "id": "oq-17",
+          "text": "Are there any required accessibility behaviors for the search page and results navigation?",
+          "blocking": false
+        },
+        {
+          "id": "oq-18",
+          "text": "Are there any logging, monitoring, or audit requirements for search requests?",
+          "blocking": false
+        },
+        {
+          "id": "oq-19",
+          "text": "Are there any caching rules or freshness expectations for data returned from the search index database?",
+          "blocking": false
+        },
+        {
+          "id": "oq-20",
+          "text": "What platform(s) are included in the “mixed” application type beyond the identified search page and API?",
+          "blocking": false
+        }
+      ],
+      "storyCount": 0,
+      "totalStoryPoints": 0,
+      "files": {
+        "specs": "specs/basic-search-relevant-results/specs.md",
+        "requirements": "specs/basic-search-relevant-results/requirements.md",
+        "tasks": "specs/basic-search-relevant-results/tasks.md",
+        "prompt": "specs/basic-search-relevant-results/prompt.md"
+      },
+      "userStories": []
+    }
+  ]
+}

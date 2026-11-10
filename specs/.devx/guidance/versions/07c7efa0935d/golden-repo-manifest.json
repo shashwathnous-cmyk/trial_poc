@@ -1,0 +1,55 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-10-14T18:59:12.457Z",
+  "repoId": "20368008-08f0-4a1a-bdf9-01f475a9bd6b",
+  "repoName": "Selected Golden Repositories",
+  "provider": "ado",
+  "repoUrl": "https://dev.azure.com/GoldenRepo/f9fbe6db-7161-4725-a620-92defcb7ba57/_apis/git/repositories/20368008-08f0-4a1a-bdf9-01f475a9bd6b",
+  "defaultBranch": "main",
+  "allFilesMode": false,
+  "requestedFilePaths": [
+    "20368008-08f0-4a1a-bdf9-01f475a9bd6b:testdata/DUMMY.md",
+    "20368008-08f0-4a1a-bdf9-01f475a9bd6b:testdata/IN.md",
+    "20368008-08f0-4a1a-bdf9-01f475a9bd6b:testdata/software-development.md",
+    "20368008-08f0-4a1a-bdf9-01f475a9bd6b:testdata/TT.md",
+    "20368008-08f0-4a1a-bdf9-01f475a9bd6b:testdata/US.md",
+    "20368008-08f0-4a1a-bdf9-01f475a9bd6b:BRD-Business-Requirements-Document-Test-projec11-sdlc3-1.0.md",
+    "20368008-08f0-4a1a-bdf9-01f475a9bd6b:intern1-home.md",
+    "20368008-08f0-4a1a-bdf9-01f475a9bd6b:risk-assessment-report.md",
+    "20368008-08f0-4a1a-bdf9-01f475a9bd6b:software-requirements-specification-srs.md"
+  ],
+  "includedFilePaths": [
+    "20368008-08f0-4a1a-bdf9-01f475a9bd6b:risk-assessment-report.md",
+    "20368008-08f0-4a1a-bdf9-01f475a9bd6b:intern1-home.md",
+    "20368008-08f0-4a1a-bdf9-01f475a9bd6b:software-requirements-specification-srs.md"
+  ],
+  "missingFilePaths": [
+    "20368008-08f0-4a1a-bdf9-01f475a9bd6b:testdata/DUMMY.md",
+    "20368008-08f0-4a1a-bdf9-01f475a9bd6b:testdata/IN.md",
+    "20368008-08f0-4a1a-bdf9-01f475a9bd6b:testdata/software-development.md",
+    "20368008-08f0-4a1a-bdf9-01f475a9bd6b:testdata/TT.md",
+    "20368008-08f0-4a1a-bdf9-01f475a9bd6b:testdata/US.md",
+    "20368008-08f0-4a1a-bdf9-01f475a9bd6b:BRD-Business-Requirements-Document-Test-projec11-sdlc3-1.0.md"
+  ],
+  "sourceFiles": [
+    {
+      "path": "20368008-08f0-4a1a-bdf9-01f475a9bd6b:risk-assessment-report.md",
+      "chunkIndex": 0,
+      "score": 1,
+      "size": 20515
+    },
+    {
+      "path": "20368008-08f0-4a1a-bdf9-01f475a9bd6b:intern1-home.md",
+      "chunkIndex": 0,
+      "score": 1,
+      "size": 2747
+    },
+    {
+      "path": "20368008-08f0-4a1a-bdf9-01f475a9bd6b:software-requirements-specification-srs.md",
+      "chunkIndex": 0,
+      "score": 1,
+      "size": 121366
+    }
+  ],
+  "warnings": []
+}

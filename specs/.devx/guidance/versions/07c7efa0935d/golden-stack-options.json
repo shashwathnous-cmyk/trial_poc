@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "projectName": "HIlti",
+  "generatedAt": "2026-10-14T18:59:12.457Z",
+  "source": "golden-repo-guidance",
+  "options": {
+    "ui": [],
+    "backend": [
+      "dotnet"
+    ],
+    "database": [],
+    "ai": [],
+    "uiCustom": [],
+    "backendCustom": [],
+    "databaseCustom": []
+  }
+}
